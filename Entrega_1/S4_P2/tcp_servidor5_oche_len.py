@@ -50,6 +50,9 @@ while True:
             print(f"Enviando longitud: {repr(longitud_respuesta)}")
             sd.sendall(longitud_respuesta.encode("utf8"))
             print(f"Enviando mensaje: {repr(respuesta)}")
-            sd.sendall(respuesta_bytes)
+            sd.sendall(respuesta_bytes) 
+
+    # CAMBIAR un sendall en vez de 2: FALLO GRAVE
     finally:
+
         sd.close()
