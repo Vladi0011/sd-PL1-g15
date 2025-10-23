@@ -67,7 +67,7 @@ def calcular_cliente(num_hilo: int, cliente_socket: socket.socket, cliente_addre
     print(f"[Hilo {num_hilo}] Conexión cerrada con: {cliente_address}")
 
 
-# ---------- Punto de entrada del proceso (hilo principal) ----------
+# Punto de entrada del proceso (hilo principal)
 
 if len(sys.argv) != 2:                             # Validamos que nos pasen 1 argumento (puerto)
     print("Uso: servidor_threading.py puerto")
