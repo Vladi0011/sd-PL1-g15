@@ -1,20 +1,11 @@
-# ------------------------------------------------------------
-# EJERCICIO 1 - CLIENTE CHAT USANDO REDIS COMO BROKER
-# ------------------------------------------------------------
-# Este programa crea un cliente de chat P2P (peer to peer)
-# que usa Redis para registrar usuarios y sus direcciones IP:puerto.
-# Cada usuario se registra al iniciar, puede consultar a otros
-# para iniciar un chat, y se elimina de Redis al salir.
-# ------------------------------------------------------------
+
 
 import sys
 import socket
 import select
 import redis
 
-# ------------------------------------------------------------
-# PARÁMETROS DE ENTRADA
-# ------------------------------------------------------------
+
 # Ejemplo de uso:
 #   python3 ejercicio1_cliente_redis.py <nick> <ip_redis>
 #
@@ -30,9 +21,7 @@ nick = sys.argv[1]
 ip_redis = sys.argv[2]
 puerto_chat = 5000  # Puerto UDP en el que el cliente escucha mensajes
 
-# ------------------------------------------------------------
-# CONEXIÓN A REDIS
-# ------------------------------------------------------------
+
 # Conectamos con el servidor Redis (por defecto, puerto 6379)
 redis_client = redis.Redis(host=ip_redis, port=6379, db=0)
 
@@ -46,9 +35,7 @@ ip_local = socket.gethostbyname(socket.gethostname())
 redis_client.set(nick, f"{ip_local}:{puerto_chat}")
 print(f"Registrado en Redis como {nick} ({ip_local}:{puerto_chat})")
 
-# ------------------------------------------------------------
-# CREACIÓN DEL SOCKET UDP
-# ------------------------------------------------------------
+
 # Se usa para enviar y recibir mensajes entre clientes
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.bind(("", puerto_chat))  # Escucha en todas las interfaces disponibles
@@ -61,9 +48,6 @@ print("\nComandos:")
 print("/CHAT <nick_destino>  → Iniciar chat con otro usuario")
 print("/QUIT                 → Salir del programa\n")
 
-# ------------------------------------------------------------
-# BUCLE PRINCIPAL
-# ------------------------------------------------------------
 while True:
     # select() permite esperar simultáneamente por entrada de teclado o mensajes UDP
     lista_lectura, _, _ = select.select([sys.stdin, s], [], [])
@@ -111,3 +95,4 @@ while True:
         # Si no hay chat activo, recordamos el comando necesario
         else:
             print("No hay chat activo. Usa /CHAT <nick_destino> para iniciar uno.")
+
