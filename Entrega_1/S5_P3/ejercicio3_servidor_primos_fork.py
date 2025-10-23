@@ -60,7 +60,7 @@ def calcular_cliente(cliente_socket: socket.socket, cliente_address):
     print(f"[Hijo {os.getpid()}] Conexión cerrada con: {cliente_address}")
 
 
-# ------------------- PUNTO DE ENTRADA DEL PROCESO PADRE -------------------
+# PUNTO DE ENTRADA DEL PROCESO PADRE
 
 if len(sys.argv) != 2:                               # Validar nº de argumentos
     print("Uso: servidor_fork.py puerto")
@@ -97,7 +97,7 @@ while True:
                 pass
             os._exit(0)                               # Salir del hijo sin ejecutar atexit/flush del padre
     else:
-        # --- Estamos en el PROCESO PADRE ---
+        # Estamos en el PROCESO PADRE
         # El padre no usará el socket de datos de este cliente: debe cerrarlo inmediatamente.
         cliente_socket.close()                        # Cierre en el padre (evita fds abiertos)
         # El padre vuelve al bucle para aceptar otros clientes en paralelo con el hijo
