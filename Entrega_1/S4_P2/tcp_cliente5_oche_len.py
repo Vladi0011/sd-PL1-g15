@@ -39,6 +39,8 @@ try:
         respuesta_bytes = c.recv(longitud_respuesta)
         respuesta = respuesta_bytes.decode("utf8", errors="replace")
         print(f"Recibido: {repr(respuesta)}")
+        # Cambiar que solo sea uno
 finally:
     c.close()
+
     print("Cliente terminado")
