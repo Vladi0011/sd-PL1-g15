@@ -46,13 +46,12 @@ while True:
             respuesta = linea_invertida
             respuesta_bytes = respuesta.encode("utf8")
             longitud_respuesta = str(len(respuesta_bytes)) + "\n"
-            
-            print(f"Enviando longitud: {repr(longitud_respuesta)}")
-            sd.sendall(longitud_respuesta.encode("utf8"))
-            print(f"Enviando mensaje: {repr(respuesta)}")
-            sd.sendall(respuesta_bytes) 
 
-    # CAMBIAR un sendall en vez de 2: FALLO GRAVE
+            #  Cabio para un unico mensaje
+            paquete_respuesta = longitud_respuesta.encode("utf8") + respuesta_bytes
+            print(f"Enviando (longitud+mensaje) en un solo sendall: {repr(longitud_respuesta)}{repr(respuesta)}")
+            sd.sendall(paquete_respuesta)
+
     finally:
-
         sd.close()
+
