@@ -1,12 +1,10 @@
-#!/usr/bin/env python3              # Indica al sistema que use Python 3 para ejecutar el archivo
-# Chat P2P por UDP con select, sin funciones ni main()
-# Uso desde la terminal: python3 chatear.py <puerto> <nick>
 
-import sys                          # Módulo para acceder a argumentos y entrada estándar (teclado)
-import socket                       # Módulo que permite usar conexiones de red (UDP/TCP)
-import select                       # Módulo que permite esperar datos en varios sitios a la vez (teclado + socket)
 
-# --- Comprobación de argumentos ---
+import sys                          
+import socket                       
+import select                       
+
+# Comprobación de argumentos 
 if len(sys.argv) != 3:              # sys.argv es la lista de argumentos que se pasan al programa
     print(f"Uso: {sys.argv[0]} <puerto> <nick>")  # Muestra cómo se usa el programa correctamente
     sys.exit(1)                     # Sale del programa con código de error 1 (mal uso)
@@ -19,7 +17,7 @@ except ValueError:                  # Si no puede convertirse (por ejemplo si po
 
 nick = sys.argv[2]                  # Guarda el segundo argumento (tu nombre o apodo)
 
-# --- Creación del socket UDP ---
+# Creación del socket UDP 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, 0)  # Crea un socket de tipo UDP (no orientado a conexión)
 s.bind(("", puerto))               # Lo asocia a tu puerto local, para poder recibir mensajes
 destino = None                     # Variable para guardar a quién estás chateando (IP y puerto)
@@ -80,3 +78,4 @@ try:
 # El bloque finally se ejecuta siempre, aunque haya errores o se use Ctrl+C
 finally:
     s.close()                                        # Cierra el socket UDP para liberar el puerto
+
