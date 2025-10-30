@@ -26,12 +26,12 @@ try:
     for mensaje in mensajes:
         mensaje_bytes = mensaje.encode("utf8")
         longitud = str(len(mensaje_bytes)) + "\n"
-        
-        print(f"Enviando longitud: {repr(longitud)}")
-        c.sendall(longitud.encode("utf8"))
-        print(f"Enviando mensaje: {repr(mensaje)}")
-        c.sendall(mensaje_bytes)
-        
+
+        # Cabio para un unico mensaje
+        paquete = longitud.encode("utf8") + mensaje_bytes
+        print(f"Enviando (longitud+mensaje) en un solo sendall: {repr(longitud)}{repr(mensaje)}")
+        c.sendall(paquete)
+
         longitud_respuesta = recibe_longitud(c)
         if longitud_respuesta is None:
             break
@@ -39,8 +39,8 @@ try:
         respuesta_bytes = c.recv(longitud_respuesta)
         respuesta = respuesta_bytes.decode("utf8", errors="replace")
         print(f"Recibido: {repr(respuesta)}")
-        # Cambiar que solo sea uno
 finally:
     c.close()
-
     print("Cliente terminado")
+
+
