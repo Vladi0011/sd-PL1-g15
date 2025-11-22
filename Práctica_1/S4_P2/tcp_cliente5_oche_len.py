@@ -4,6 +4,16 @@ import sys
 host = sys.argv[1] if len(sys.argv) > 1 else "localhost"
 puerto = int(sys.argv[2]) if len(sys.argv) > 2 else 9999
 
+
+def recvall(sock, n):
+    data = b""
+    while len(data) < n:
+        packet = sock.recv(n - len(data))
+        if not packet: return None
+        data += packet
+    return data
+
+
 def recibe_longitud(sd):
     longitud_str = ""
     while True:
@@ -36,7 +46,7 @@ try:
         if longitud_respuesta is None:
             break
         
-        respuesta_bytes = c.recv(longitud_respuesta)
+        respuesta_bytes = c.recvall(longitud_respuesta)
         respuesta = respuesta_bytes.decode("utf8", errors="replace")
         print(f"Recibido: {repr(respuesta)}")
 finally:
