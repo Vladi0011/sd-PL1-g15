@@ -3,14 +3,6 @@ import sys
 
 puerto = int(sys.argv[1]) if len(sys.argv) > 1 else 9999
 
-def recvall(sock, n):
-    data = b""
-    while len(data) < n:
-        packet = sock.recv(n - len(data))
-        if not packet: return None
-        data += packet
-    return data
-
 def recibe_longitud(sd):
     longitud_str = ""
     while True:
@@ -42,7 +34,7 @@ while True:
                 print("Cliente cerró conexión")
                 break
             
-            mensaje_bytes = sd.recvall(longitud)
+            mensaje_bytes = sd.recv(longitud)
             if not mensaje_bytes:
                 print("Cliente cerró conexión")
                 break
