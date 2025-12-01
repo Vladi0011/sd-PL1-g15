@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copiar los archivos necesarios a la imagen
 COPY ejercicio1_finalToDo.py ./
-COPY contrasenyas.txt ./
+COPY contraseñas.txt ./
 COPY static /app/static
 
 # Instalar las dependencias
