@@ -17,6 +17,7 @@ RUN pip install Flask-SQLAlchemy
 RUN pip install flask-httpauth
 RUN pip install Werkzeug
 RUN pip install pymysql
+RUN pip install mysql-connector-python
 
 # Variable de entorno SQLALCHEMY_DATABASE_URI para la BBDD
 ENV SQLALCHEMY_DATABASE_URI 'mysql+pymysql://tarea_user:tarea_pass@mariadb_tarea_db/tarea_db'
