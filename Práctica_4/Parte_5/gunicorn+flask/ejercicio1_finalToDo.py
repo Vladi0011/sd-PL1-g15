@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request, abort, make_response, url_for
 import mysql.connector
 from flask_httpauth import HTTPBasicAuth
 from werkzeug.security import check_password_hash
+import os
 
 app = Flask(__name__)
 
@@ -53,12 +54,14 @@ def no_autorizado():
     return make_response(jsonify({'error': 'Credenciales no válidas'}), 401)
 
 
-# CONFIGURACIÓN DE LA BASE DE DATOS
+DATABASE_URL = os.environ.get(
+    'DATABASE_URL', 'mysql+mysqlconnector://tarea_user:tarea_pass@mariadb_tarea_db/tarea_db'
+)
 
 DB_CONFIG = {
-    "host": "localhost",
+    "host": DATABASE_URL.split('@')[1].split('/')[0], # 'mariadb_tarea_db'
     "user": "tarea_user",
-    "password": "tarea_pass",  # el usuario/clave que creaste en MariaDB
+    "password": "tarea_pass",
     "database": "tarea_db",
 }
 
@@ -263,3 +266,4 @@ def solicitud_invalida(error):
 
 if __name__ == "__main__":
     app.run(debug=True)
+
