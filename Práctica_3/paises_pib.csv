@@ -1,0 +1,197 @@
+Posición,Variación,País,PIB (millones USD)
+-,,Mundo,&&&&&&0102404010.&&&&&0102 404 010
+1,,Estados Unidos,25 462 700
+2,,ChinaChina,17 963 170
+—,,Unión Europea,16 641 391
+3,,JapónJapón,4 231 141
+4,,AlemaniaAlemania,4 072 191
+5,1,India,3 385 089
+6,1,Reino UnidoReino Unido,3 070 667
+7,,Francia,2 782 905
+8,4,RusiaRusia,2 240 422
+9,,CanadáCanadá,2 139 840
+10,2,ItaliaItalia,2 010 431
+11,,BrasilBrasil,1 920 095
+12,1,Australia,1 675 418
+13,3,Corea del SurCorea del Sur,1 665 245
+14,1,MéxicoMéxico,1 414 187
+15,1,EspañaEspaña,1 397 509
+16,,IndonesiaIndonesia,1 319 100
+17,2,TurquíaTurquía,1 154 600
+18,2,Arabia SauditaArabia Saudita,1 108 148
+19,,Países BajosPaíses Bajos,991 114
+—,,República de China,&&&&&&&&&0850528.&&&&&0850 528
+20,,SuizaSuiza,807 706
+21,1,PoloniaPolonia,688 176
+22,8,Argentina,632 770
+23,,SueciaSuecia,585 939
+24,7,NoruegaNoruega,579 267
+25,1,BélgicaBélgica,578 604
+26,1,Irlanda,529 244
+27,2,IsraelIsrael,522 033
+28,6,Emiratos Árabes UnidosEAU,507 534
+29,4,Tailandia,495 340
+30,4,NigeriaNigeria,477 836
+31,1,EgiptoEgipto,476 747
+32,4,AustriaAustria,471 400
+33,6,SingapurSingapur,466 788
+34,6,BangladésBangladés,460 201
+35,,VietnamVietnam,408 802
+36,,MalasiaMalasia,406 305
+37,4,Sudáfrica,405 869
+38,,FilipinasFilipinas,404 484
+39,2,DinamarcaDinamarca,395 403
+40,23,IránIrán,388 544
+41,5,PakistánPakistán,376 532
+—,,Hong KongHong Kong,359 838
+42,,ColombiaColombia,343 939
+43,,RumaniaRumania,301 261
+44,3,ChileChile,301 025
+45,,República ChecaRepública Checa,290 923
+46,2,FinlandiaFinlandia,280 825
+47,3,IrakIrak,264 182
+48,1,Portugal,251 945
+49,1,Nueva ZelandaNueva Zelanda,247 234
+50,1,PerúPerú,242 631
+51,4,CatarCatar,237 295
+52,1,KazajistánKazajistán,220 623
+53,2,GreciaGrecia,219 065
+54,2,ArgeliaArgelia,191 912
+55,2,KuwaitKuwait,184 558
+56,2,HungríaHungría,178 788
+57,5,UcraniaUcrania,160 502
+58,,MarruecosMarruecos,134 181
+59,3,EtiopíaEtiopía,126 783
+60,1,EslovaquiaEslovaquia,115 468
+61,,EcuadorEcuador,115 049
+62,4,OmánOmán,114 667
+63,,República DominicanaRepública Dominicana,113 641
+—,,Puerto RicoPuerto Rico(EE. UU.),113 434
+64,4,KeniaKenia,113 420
+65,5,AngolaAngola,106 713
+66,1,GuatemalaGuatemala,95 003
+67,,BulgariaBulgaria,89 040
+68,4,LuxemburgoLuxemburgo,82 274
+69,4,UzbekistánUzbekistán,80 391
+70,16,AzerbaiyánAzerbaiyán,78 721
+71,9,PanamáPanamá,76 522
+72,,TanzaniaTanzania,75 709
+73,5,Sri LankaSri Lanka,74 403
+74,5,GhanaGhana,72 838
+75,1,BielorrusiaBielorrusia,72 793
+76,5,UruguayUruguay,71 177
+77,2,CroaciaCroacia,70 964
+78,2,LituaniaLituania,70 334
+79,8,Costa de MarfilCosta de Marfil,70 018
+80,1,Costa RicaCosta Rica,68 380
+81,4,SerbiaSerbia,63 501
+82,4,EsloveniaEslovenia,62 117
+83,1,BirmaniaBirmania,59 364
+84,1,República Democrática del CongoRepública Democrática del Congo,58 065
+85,12,Sudán,51 662
+86,2,JordaniaJordania,47 451
+87,3,TúnezTúnez,46 664
+88,12,LibiaLibia,45 752
+89,6,Turkmenistán(2020),45 610
+90,1,UgandaUganda,45 559
+91,,BaréinBaréin,44 390
+92,4,CamerúnCamerún,44 341
+93,,BoliviaBolivia,43 068
+94,1,ParaguayParaguay,41 722
+95,1,LetoniaLetonia,41 153
+96,1,NepalNepal,40 828
+97,1,EstoniaEstonia,38 100
+98,1,El SalvadorEl Salvador,32 488
+99,5,HondurasHonduras,31 717
+100,1,Papúa Nueva GuineaPapúa Nueva Guinea,30 633
+101,2,CamboyaCamboya,29 956
+102,5,Zambia,29 784
+103,1,ChipreChipre,28 439
+104,4,Trinidad y TobagoTrinidad y Tobago,27 899
+105,1,IslandiaIslandia,27 841
+106,7,SenegalSenegal,27 684
+107,9,GeorgiaGeorgia,24 605
+108,1,Bosnia y HerzegovinaBosnia y Herzegovina,24 527
+109,9,LíbanoLíbano,23 131
+—,,Macao,21 979
+110,,YemenYemen,21 606
+111,10,GuineaGuinea,21 227
+112,6,GabónGabón,&&&&&&&&&&019632.&&&&&019 632
+113,7,ZimbabueZimbabue,20 678
+114,5,BotsuanaBotsuana,20 253
+115,5,HaitíHaití,20 253
+116,14,ArmeniaArmenia,19 502
+—,,Palestina,19 111
+117,5,Burkina FasoBurkina Faso,18 884
+118,5,AlbaniaAlbania,18 882
+119,6,MaliMali,18 827
+120,5,MozambiqueMozambique,17 851
+121,1,MaltaMalta,17 765
+122,5,BenínBenín,17 401
+123,7,Jamaica,17 097
+124,3,Mongolia,16 810
+125,2,BrunéiBrunéi,15 724
+126,12,LaosLaos,&&&&&&&&&&020631.&&&&&020 631
+127,6,NicaraguaNicaragua,15 671
+128,14,GuyanaGuyana,15 357
+129,,MadagascarMadagascar,14 954
+130,4,República del CongoRepública del Congo,14 615
+131,15,AfganistánAfganistán,14 583
+132,2,MoldaviaMoldavia,14 420
+133,5,NígerNíger,13 969
+142,2,Macedonia del NorteMacedonia del Norte,13 563
+143,8,RuandaRuanda,13 312
+144,3,MalauiMalaui,13 164
+139,4,Mauricio,12 898
+140,6,BahamasBahamas,12 897
+141,3,Chad,12 704
+142,5,NamibiaNamibia,12 607
+143,4,Guinea EcuatorialGuinea Ecuatorial,11 813
+144,59,SiriaSiria,11 159
+145,1,KirguistánKirguistán,10 930
+146,1,Tayikistán,10 492
+147,2,MauritaniaMauritania,10 375
+—,,KosovoKosovo,9 429
+148,4,Togo,8 126
+149,,Somalia,8 126
+150,,MaldivasMaldivas,6 189
+151,2,MontenegroMontenegro,6 095
+152,,BarbadosBarbados,5 637
+153,,FiyiFiyi,4 943
+154,,SuazilandiaSuazilandia,4 854
+155,1,LiberiaLiberia,4 001
+156,1,Sierra LeonaSierra Leona,3 970
+157,3,SurinamSurinam,3 620
+158,2,YibutiYibuti,3 515
+159,1,AndorraAndorra,3 352
+160,10,Timor OrientalTimor Oriental,31 63
+161,,ArubaAruba,3 126
+162,1,BurundiBurundi,3 073
+163,5,BeliceBelice,2 824
+164,,LesotoLesoto,2 553
+165,,ButánBután,2 539
+166,2,República CentroafricanaRepública Centroafricana,2 382
+167,1,Cabo VerdeCabo Verde,2 314
+168,,GambiaGambia,2 273
+169,1,Santa LucíaSanta Lucía,2 065
+170,4,EritreaEritrea,2 065
+171,1,San Marino,1 855
+172,3,Antigua y BarbudaAntigua y Barbuda,1 757
+173,1,Guinea-BisáuGuinea-Bisáu,1 633
+174,2,Islas SalomónIslas Salomón,1 595
+175,1,SeychellesSeychelles,1 588
+176,1,GranadaGranada,1 256
+177,1,ComorasComoras,1 242
+178,1,VanuatuVanuatu,983
+179,1,San Cristóbal y NievesSan Cristóbal y Nieves,961
+180,,San Vicente y las GranadinasSan Vicente y las Granadinas,948
+181,,SamoaSamoa,832
+182,,DominicaDominica,612
+183,,Santo Tomé y Príncipe,546
+184,,Tonga,469
+185,,MicronesiaMicronesia,427
+186,,Islas MarshallIslas Marshall,279
+187,,KiribatiKiribati,223
+188,,PalaosPalaos,217
+189,,NauruNauru,150
+190,,Tuvalu,60
